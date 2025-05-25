@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        background-color: rgba(222, 115, 72 ,0.5);
+    }
+    .flex-item{
+        width: calc(50% - 1px);
+        background-color: lightblue;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        
+
+    }
+    .mobile{
+        width: calc(100% - 1px);
+    }
+    @media screen and (max-width: 1024px){
+        .flex-item{
+            width: calc(100% - 1px);
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="flex">
+        <div class="flex-item">Khối 1</div>
+        <div class="flex-item">Khối 2</div>
+        <div class="flex-item mobile">Khối 3</div>
+    </div>
+    
+</body>
+</html>
