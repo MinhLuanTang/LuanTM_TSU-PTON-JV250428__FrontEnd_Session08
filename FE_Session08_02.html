@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+    }
+    .flex-item{
+        width: calc(25% - 10px);
+        background-color: salmon;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        
+
+    }
+    
+    @media screen and (max-width: 1024px){
+        .flex-item{
+            width: calc(50% - 10px);
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        .flex-item{
+            width: calc(100% - 10px);
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="flex">
+        <div class="flex-item">Cột 1</div>
+        <div class="flex-item">Cột 2</div>
+        <div class="flex-item">Cột 3</div>
+        <div class="flex-item">Cột 4</div>
+    </div>
+    
+</body>
+</html>
